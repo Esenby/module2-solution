@@ -1,0 +1,115 @@
+<body>
+
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  font-size: 175%; 
+  margin-bottom: 15px;
+  color: blue;
+}
+
+div {position: relative;}
+section {
+	clear: both;}
+
+p {
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 180px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-family: Helvetica;
+  color: white;
+  padding: 1px;
+  clear: both;
+
+}
+
+p.ticket {
+		    position:absolute;
+			border: 1px solid black;
+			background-color: white;
+			font-weight: bold;
+  			font-style: italic;
+  			width: 33%;
+			height: 10%;
+			top: 0%;
+			right: 6.5%;
+			text-align: center;
+			color: red;
+			clear: both;
+			float: right;
+			}
+p.description {
+		    position:absolute;
+			border: 0px;
+			text-align: center;
+  			font-style: italic;
+  			width: 80%;
+			height: 50%;
+			bottom: 0%;
+			left: 6.5%;
+			}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+    border: 5px;
+  }
+  .col-lg-1 {
+    width: 33%;
+  }
+  .col-lg-2 {
+    width: 33%;
+  }
+  .col-lg-3 {
+    width: 33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left; 
+    border: 0px;
+  }
+  .col-md-1 {
+    width: 49%;
+  }
+  .col-md-2 {
+    width: 49%;
+  }
+  .col-md-3 {
+  	width: 103%;
+  }
+}
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-1, .col-sm-2, .col-sm-3 {
+    float: left;
+    border: 5px;
+  }
+  .col-sm-1 {
+    width: 100%;
+  }
+  .col-sm-2 {
+    width: 100%;
+  }
+  .col-sm-3 {
+    width: 100%;
+  }
+}
+
+</body>
